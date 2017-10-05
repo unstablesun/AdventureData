@@ -22,6 +22,16 @@ public class WorldLocation : MonoBehaviour
 	public TextMeshProUGUI short_description;
 	public TextMeshProUGUI secrete_description;
 
+	public enum EnviroHazardLevel
+	{
+		Level0,
+		Level1,
+		Level2,
+		Level3,
+		Level4,
+	};
+	public EnviroHazardLevel hazardLevel = EnviroHazardLevel.Level0;
+
 	void Start () 
 	{
 		

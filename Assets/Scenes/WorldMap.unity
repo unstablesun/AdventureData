@@ -261,6 +261,159 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 622654}
+--- !u!1 &16142178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 16142179}
+  - component: {fileID: 16142181}
+  - component: {fileID: 16142180}
+  m_Layer: 5
+  m_Name: AreaNum (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &16142179
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16142178}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 273363639}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 39.4, y: -32.80005}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &16142180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16142178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 39.146652, y: 61.427124, z: 41.364044, w: 81.30054}
+  m_textInfo:
+    textComponent: {fileID: 16142180}
+    characterCount: 1
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 1
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &16142181
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16142178}
 --- !u!1 &19520854
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,7 +1672,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing.
+  m_text: You are in an area of rubble and stinging nettles.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -1586,12 +1739,12 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 99471976}
-    characterCount: 22
+    characterCount: 50
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 9
+    wordCount: 10
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -1974,7 +2127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 20
   West: {fileID: 1764989096}
   North: {fileID: 998854630}
   East: {fileID: 2043312958}
@@ -1986,6 +2139,7 @@ MonoBehaviour:
   description: {fileID: 375951385}
   short_description: {fileID: 1502831197}
   secrete_description: {fileID: 1656680509}
+  hazardLevel: 0
 --- !u!114 &103879001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2968,6 +3122,7 @@ MonoBehaviour:
   description: {fileID: 1441540094}
   short_description: {fileID: 1500564585}
   secrete_description: {fileID: 1122345124}
+  hazardLevel: 0
 --- !u!114 &189261027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3070,7 +3225,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2063488300}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3218,7 +3373,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2063488300}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3318,7 +3473,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You see a large pit.
+  m_text: You see two headed lizards scurring about.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -3385,12 +3540,12 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 199231507}
-    characterCount: 20
+    characterCount: 42
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 6
+    wordCount: 7
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -3445,7 +3600,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2063488300}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -4360,6 +4515,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 16142179}
   - {fileID: 562640230}
   - {fileID: 696456274}
   - {fileID: 1437746348}
@@ -4398,6 +4554,7 @@ MonoBehaviour:
   description: {fileID: 296957476}
   short_description: {fileID: 1647566797}
   secrete_description: {fileID: 1967214570}
+  hazardLevel: 0
 --- !u!114 &273363641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4648,7 +4805,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 273363639}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -4841,6 +4998,7 @@ MonoBehaviour:
   description: {fileID: 1981127308}
   short_description: {fileID: 2147414578}
   secrete_description: {fileID: 458762740}
+  hazardLevel: 0
 --- !u!114 &302142548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5594,6 +5752,7 @@ MonoBehaviour:
   description: {fileID: 1534606497}
   short_description: {fileID: 549772766}
   secrete_description: {fileID: 1726443477}
+  hazardLevel: 0
 --- !u!114 &362299840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5647,7 +5806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.020545002, g: 0.6985294, b: 0.5582568, a: 1}
+  m_Color: {r: 0.19568071, g: 0.4705882, b: 0.15916955, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5951,7 +6110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 25
   West: {fileID: 305007736}
   North: {fileID: 1740841424}
   East: {fileID: 1923743275}
@@ -5963,6 +6122,7 @@ MonoBehaviour:
   description: {fileID: 1318543867}
   short_description: {fileID: 1284189826}
   secrete_description: {fileID: 2093728077}
+  hazardLevel: 0
 --- !u!114 &386277348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6632,6 +6792,7 @@ MonoBehaviour:
   description: {fileID: 2050821550}
   short_description: {fileID: 1842757874}
   secrete_description: {fileID: 1930754675}
+  hazardLevel: 0
 --- !u!114 &443853897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8086,7 +8247,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 273363639}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -8199,6 +8360,7 @@ MonoBehaviour:
   description: {fileID: 1310893724}
   short_description: {fileID: 19520856}
   secrete_description: {fileID: 2081705918}
+  hazardLevel: 0
 --- !u!114 &566450802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8930,7 +9092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 24
   West: {fileID: 981663954}
   North: {fileID: 1950254243}
   East: {fileID: 619419533}
@@ -8942,6 +9104,7 @@ MonoBehaviour:
   description: {fileID: 922681745}
   short_description: {fileID: 1414564531}
   secrete_description: {fileID: 711193486}
+  hazardLevel: 0
 --- !u!114 &619815664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9145,7 +9308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 22
   West: {fileID: 29069879}
   North: {fileID: 1176252444}
   East: {fileID: 1971268097}
@@ -9157,6 +9320,7 @@ MonoBehaviour:
   description: {fileID: 1773521588}
   short_description: {fileID: 678655096}
   secrete_description: {fileID: 1556917485}
+  hazardLevel: 2
 --- !u!114 &638943082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9210,7 +9374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.020545002, g: 0.5863116, b: 0.6985294, a: 1}
+  m_Color: {r: 0.58823526, g: 0.41946065, b: 0.056228355, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9372,6 +9536,7 @@ MonoBehaviour:
   description: {fileID: 1502577455}
   short_description: {fileID: 757462044}
   secrete_description: {fileID: 1344734120}
+  hazardLevel: 0
 --- !u!114 &645896380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9832,7 +9997,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2063488300}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -9932,7 +10097,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing.
+  m_text: 'You are in an area of steaming pools of rust colored water. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -9999,12 +10164,12 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 678655096}
-    characterCount: 22
+    characterCount: 60
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 12
+    wordCount: 12
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -10287,7 +10452,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 273363639}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -10667,7 +10832,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 273363639}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -10780,6 +10945,7 @@ MonoBehaviour:
   description: {fileID: 2064423474}
   short_description: {fileID: 253207908}
   secrete_description: {fileID: 951005212}
+  hazardLevel: 0
 --- !u!114 &733585015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11148,6 +11314,7 @@ MonoBehaviour:
   description: {fileID: 2059399392}
   short_description: {fileID: 2115726448}
   secrete_description: {fileID: 1025202783}
+  hazardLevel: 0
 --- !u!114 &750974780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11516,6 +11683,7 @@ MonoBehaviour:
   description: {fileID: 1480614007}
   short_description: {fileID: 2065913105}
   secrete_description: {fileID: 1247140581}
+  hazardLevel: 0
 --- !u!114 &789145058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11947,7 +12115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 21
   West: {fileID: 555603251}
   North: {fileID: 546533567}
   East: {fileID: 1141031660}
@@ -11959,6 +12127,7 @@ MonoBehaviour:
   description: {fileID: 1350188706}
   short_description: {fileID: 218967838}
   secrete_description: {fileID: 716600968}
+  hazardLevel: 0
 --- !u!114 &821641581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12860,6 +13029,7 @@ MonoBehaviour:
   description: {fileID: 799584678}
   short_description: {fileID: 1929957089}
   secrete_description: {fileID: 128406750}
+  hazardLevel: 0
 --- !u!114 &920011757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13713,7 +13883,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2063488300}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -14048,6 +14218,7 @@ MonoBehaviour:
   description: {fileID: 2051117016}
   short_description: {fileID: 435125461}
   secrete_description: {fileID: 88784879}
+  hazardLevel: 0
 --- !u!114 &1024437453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14804,6 +14975,159 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1055648567}
+--- !u!1 &1067713605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1067713606}
+  - component: {fileID: 1067713608}
+  - component: {fileID: 1067713607}
+  m_Layer: 5
+  m_Name: AreaNum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1067713606
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067713605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2063488300}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 33.8, y: -32.8}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1067713607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067713605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 39.146652, y: 61.427124, z: 41.364044, w: 81.30054}
+  m_textInfo:
+    textComponent: {fileID: 1067713607}
+    characterCount: 1
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 1
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1067713608
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067713605}
 --- !u!1 &1069290938
 GameObject:
   m_ObjectHideFlags: 0
@@ -16087,6 +16411,7 @@ MonoBehaviour:
   description: {fileID: 1800357536}
   short_description: {fileID: 70049471}
   secrete_description: {fileID: 888148847}
+  hazardLevel: 0
 --- !u!114 &1130625467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17315,6 +17640,7 @@ MonoBehaviour:
   description: {fileID: 1748324654}
   short_description: {fileID: 622656}
   secrete_description: {fileID: 1453239572}
+  hazardLevel: 0
 --- !u!114 &1265174115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18126,7 +18452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 19
   West: {fileID: 584146821}
   North: {fileID: 1796413787}
   East: {fileID: 1318116185}
@@ -18138,6 +18464,7 @@ MonoBehaviour:
   description: {fileID: 680276206}
   short_description: {fileID: 1561265471}
   secrete_description: {fileID: 738756903}
+  hazardLevel: 0
 --- !u!114 &1300198845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18876,7 +19203,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You can't see much ahead.
+  m_text: You can not see much ahead.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -18943,10 +19270,10 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1344734120}
-    characterCount: 25
+    characterCount: 27
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 5
+    wordCount: 6
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -19270,6 +19597,7 @@ MonoBehaviour:
   description: {fileID: 1044236715}
   short_description: {fileID: 604717794}
   secrete_description: {fileID: 140146876}
+  hazardLevel: 0
 --- !u!114 &1359953193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19399,7 +19727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 30
   West: {fileID: 243225663}
   North: {fileID: 803881642}
   East: {fileID: 2140129990}
@@ -19411,6 +19739,7 @@ MonoBehaviour:
   description: {fileID: 1942638561}
   short_description: {fileID: 1927567937}
   secrete_description: {fileID: 1086592632}
+  hazardLevel: 0
 --- !u!114 &1367288504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19614,7 +19943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 26
   West: {fileID: 1482377376}
   North: {fileID: 552730690}
   East: {fileID: 315095835}
@@ -19626,6 +19955,7 @@ MonoBehaviour:
   description: {fileID: 150869475}
   short_description: {fileID: 842008321}
   secrete_description: {fileID: 32739112}
+  hazardLevel: 0
 --- !u!114 &1375336271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20257,7 +20587,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 273363639}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -20523,6 +20853,7 @@ MonoBehaviour:
   description: {fileID: 1310291683}
   short_description: {fileID: 899018806}
   secrete_description: {fileID: 1293974602}
+  hazardLevel: 0
 --- !u!114 &1450228961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20664,6 +20995,7 @@ MonoBehaviour:
   description: {fileID: 179619015}
   short_description: {fileID: 455037208}
   secrete_description: {fileID: 360102047}
+  hazardLevel: 0
 --- !u!114 &1450277476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20993,7 +21325,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2063488300}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -21553,8 +21885,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are surrounded by dark woods consisting of tall trees with black bark.  Wet
-    earth fills your nostrals.
+  m_text: You are surrounded by dark woods.  The trees are tall with black bark and
+    covered in blood moss.  You smell an organic musky fragrance.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -21621,12 +21953,12 @@ MonoBehaviour:
   m_margin: {x: 23.903107, y: 0, z: 22.309608, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1502577455}
-    characterCount: 106
+    characterCount: 135
     spriteCount: 0
-    spaceCount: 18
-    wordCount: 18
+    spaceCount: 25
+    wordCount: 24
     linkCount: 0
-    lineCount: 3
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -22316,7 +22648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 23
   West: {fileID: 1633946742}
   North: {fileID: 185591948}
   East: {fileID: 2066718054}
@@ -22328,6 +22660,7 @@ MonoBehaviour:
   description: {fileID: 2120387697}
   short_description: {fileID: 1556452023}
   secrete_description: {fileID: 1549667843}
+  hazardLevel: 1
 --- !u!114 &1536151124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22381,7 +22714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.020545002, g: 0.5863116, b: 0.6985294, a: 1}
+  m_Color: {r: 0.5147059, g: 0.5147059, b: 0.5147059, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -22543,6 +22876,7 @@ MonoBehaviour:
   description: {fileID: 1128992526}
   short_description: {fileID: 572217045}
   secrete_description: {fileID: 1101310182}
+  hazardLevel: 0
 --- !u!114 &1547546591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22671,7 +23005,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You see a large pit.
+  m_text: Beside the house you see a storm cellar.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -22738,12 +23072,12 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1549667843}
-    characterCount: 20
+    characterCount: 40
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 7
+    wordCount: 8
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -22824,7 +23158,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing.
+  m_text: You are in an area of covered in greasy black grass.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -22891,12 +23225,12 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1556452023}
-    characterCount: 22
+    characterCount: 52
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 10
+    wordCount: 11
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -22977,7 +23311,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You see a large pit.
+  m_text: You can not see. You choke on the fumes.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -23044,12 +23378,12 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1556917485}
-    characterCount: 20
+    characterCount: 40
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 8
+    wordCount: 9
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -23512,7 +23846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 18
   West: {fileID: 103496513}
   North: {fileID: 1266569989}
   East: {fileID: 76386835}
@@ -23524,6 +23858,7 @@ MonoBehaviour:
   description: {fileID: 1590851908}
   short_description: {fileID: 1985424764}
   secrete_description: {fileID: 100480353}
+  hazardLevel: 0
 --- !u!114 &1592368177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24149,7 +24484,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 273363639}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -24556,7 +24891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 32
   West: {fileID: 345057490}
   North: {fileID: 1930145883}
   East: {fileID: 1268698996}
@@ -24568,6 +24903,7 @@ MonoBehaviour:
   description: {fileID: 1281712917}
   short_description: {fileID: 858878873}
   secrete_description: {fileID: 1087269469}
+  hazardLevel: 0
 --- !u!114 &1663289856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25160,7 +25496,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You see a large pit.
+  m_text: You see nothing of interest.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -25227,7 +25563,7 @@ MonoBehaviour:
   m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1726443477}
-    characterCount: 20
+    characterCount: 28
     spriteCount: 0
     spaceCount: 4
     wordCount: 5
@@ -26053,8 +26389,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing of green grass. In the distance you see trees on all
-    sides.
+  m_text: You are in an area of steaming pools of rust colored water.  The terrain
+    is rough, watch your step.  The way is obscurred by curtains of steam.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -26121,12 +26457,12 @@ MonoBehaviour:
   m_margin: {x: 23.903107, y: 0, z: 22.309608, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1773521588}
-    characterCount: 81
+    characterCount: 143
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 28
+    wordCount: 27
     linkCount: 0
-    lineCount: 2
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -26220,6 +26556,7 @@ MonoBehaviour:
   description: {fileID: 1109147277}
   short_description: {fileID: 260352680}
   secrete_description: {fileID: 458313716}
+  hazardLevel: 0
 --- !u!114 &1776244307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27118,6 +27455,7 @@ MonoBehaviour:
   description: {fileID: 1383031470}
   short_description: {fileID: 1040903793}
   secrete_description: {fileID: 163471985}
+  hazardLevel: 0
 --- !u!114 &1867713403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28315,6 +28653,7 @@ MonoBehaviour:
   description: {fileID: 235565049}
   short_description: {fileID: 1513122790}
   secrete_description: {fileID: 2146362838}
+  hazardLevel: 0
 --- !u!114 &1931647736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28820,18 +29159,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 27
   West: {fileID: 1404909865}
   North: {fileID: 1396447630}
   East: {fileID: 950632991}
   South: {fileID: 864204030}
-  bWest: 1
+  bWest: 0
   bNorth: 1
-  bEast: 0
-  bSouth: 1
+  bEast: 1
+  bSouth: 0
   description: {fileID: 1998513149}
   short_description: {fileID: 99471976}
   secrete_description: {fileID: 199231507}
+  hazardLevel: 1
 --- !u!114 &1967018727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28885,7 +29225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.020545002, g: 0.5863116, b: 0.6985294, a: 1}
+  m_Color: {r: 0.038927346, g: 0.40788686, b: 0.44117647, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -28934,7 +29274,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 273363639}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -29569,7 +29909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d15033030049c2408ce039cbbbff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 17
+  area: 31
   West: {fileID: 1519088776}
   North: {fileID: 23494295}
   East: {fileID: 344215228}
@@ -29581,6 +29921,7 @@ MonoBehaviour:
   description: {fileID: 1838601249}
   short_description: {fileID: 1893508464}
   secrete_description: {fileID: 1593528196}
+  hazardLevel: 0
 --- !u!114 &1988315063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29709,8 +30050,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing of green grass. In the distance you see trees on all
-    sides.
+  m_text: You are in an area of rubble and stinging nettles.  To the west the ground
+    rises sharply.  To the south there is a void, a black wall of nothingness.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -29777,12 +30118,12 @@ MonoBehaviour:
   m_margin: {x: 23.903107, y: 0, z: 22.309608, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 1998513149}
-    characterCount: 81
+    characterCount: 149
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 30
+    wordCount: 29
     linkCount: 0
-    lineCount: 2
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -30824,6 +31165,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1067713606}
   - {fileID: 677833902}
   - {fileID: 199070560}
   - {fileID: 196323228}
@@ -30862,6 +31204,7 @@ MonoBehaviour:
   description: {fileID: 2079002241}
   short_description: {fileID: 208765947}
   secrete_description: {fileID: 1469823754}
+  hazardLevel: 0
 --- !u!114 &2063488302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31419,7 +31762,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2063488300}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -31992,6 +32335,7 @@ MonoBehaviour:
   description: {fileID: 2013555578}
   short_description: {fileID: 433559848}
   secrete_description: {fileID: 1190928424}
+  hazardLevel: 1
 --- !u!114 &2107062762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32273,8 +32617,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing of green grass. In the distance you see trees on all
-    sides.
+  m_text: You are in an area of covered in greasy black grass.  In the center a burnt
+    out house stands still smoldering
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -32341,12 +32685,12 @@ MonoBehaviour:
   m_margin: {x: 23.903107, y: 0, z: 22.309608, w: 19.400879}
   m_textInfo:
     textComponent: {fileID: 2120387697}
-    characterCount: 81
+    characterCount: 109
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 21
+    wordCount: 21
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
