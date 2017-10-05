@@ -4,14 +4,9 @@ using UnityEngine;
 using TMPro;
 
 
-public class WorldLocation : MonoBehaviour 
+public class CreatureEntry : MonoBehaviour 
 {
-	public int area;
-
-	public GameObject West;
-	public GameObject North;
-	public GameObject East;
-	public GameObject South;
+	public int id;
 
 	public bool bWest;
 	public bool bNorth;
@@ -20,9 +15,9 @@ public class WorldLocation : MonoBehaviour
 
 	public TextMeshProUGUI description;
 	public TextMeshProUGUI short_description;
-	public TextMeshProUGUI secrete_description;
+	public TextMeshProUGUI attack_description;
 
-	public enum EnviroHazardLevel
+	public enum CreatureLevel
 	{
 		Level0,
 		Level1,
@@ -30,11 +25,12 @@ public class WorldLocation : MonoBehaviour
 		Level3,
 		Level4,
 	};
-	public EnviroHazardLevel hazardLevel = EnviroHazardLevel.Level0;
+	public CreatureLevel creatureLevel = CreatureLevel.Level0;
 
 	void Start () 
 	{
-		
+
 	}
-	
+
 }
+
