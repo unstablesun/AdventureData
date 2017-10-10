@@ -2136,6 +2136,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 375951385}
   short_description: {fileID: 1502831197}
   secrete_description: {fileID: 1656680509}
@@ -3119,6 +3121,8 @@ MonoBehaviour:
   bNorth: 0
   bEast: 0
   bSouth: 0
+  bUp: 0
+  bDown: 0
   description: {fileID: 1441540094}
   short_description: {fileID: 1500564585}
   secrete_description: {fileID: 1122345124}
@@ -4366,8 +4370,9 @@ RectTransform:
   - {fileID: 1845891421}
   - {fileID: 331173999}
   - {fileID: 709713366}
+  - {fileID: 309450680}
   - {fileID: 1086960877}
-  - {fileID: 1550563906}
+  - {fileID: 1837321181}
   m_Father: {fileID: 1983318925}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4388,14 +4393,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  bWest: 0
-  bNorth: 0
-  bEast: 0
-  bSouth: 0
-  description: {fileID: 0}
-  short_description: {fileID: 0}
-  attack_description: {fileID: 0}
+  bHasPoison: 1
+  bHasBleed: 0
   creatureLevel: 0
+  description: {fileID: 1845891422}
+  short_description: {fileID: 331174000}
+  attack_success_desc: {fileID: 709713367}
+  attack_fail_desc: {fileID: 309450681}
+  defend_success_desc: {fileID: 1086960878}
+  defend_fail_desc: {fileID: 1837321182}
+  encounter_result_good_desc: {fileID: 0}
+  encounter_result_bad_desc: {fileID: 0}
 --- !u!114 &259003439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4449,7 +4457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7941176, g: 0, b: 0.17170985, a: 1}
+  m_Color: {r: 0.42647058, g: 0.053308822, b: 0.13399649, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4688,6 +4696,8 @@ MonoBehaviour:
   bNorth: 0
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 296957476}
   short_description: {fileID: 1647566797}
   secrete_description: {fileID: 1967214570}
@@ -5132,6 +5142,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1981127308}
   short_description: {fileID: 2147414578}
   secrete_description: {fileID: 458762740}
@@ -5447,6 +5459,159 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309192101}
+--- !u!1 &309450679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 309450680}
+  - component: {fileID: 309450682}
+  - component: {fileID: 309450681}
+  m_Layer: 5
+  m_Name: AttackFailDesc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &309450680
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309450679}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 259003437}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 93, y: -130.6}
+  m_SizeDelta: {x: 200, y: 37.07}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &309450681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309450679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: You take stings to the face and hands.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 2.8102722, y: 4.8476562, z: 2.4321747, w: 5.4331055}
+  m_textInfo:
+    textComponent: {fileID: 309450681}
+    characterCount: 38
+    spriteCount: 0
+    spaceCount: 7
+    wordCount: 8
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &309450682
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309450679}
 --- !u!1 &315095835
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,8 +5718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93, y: -113.1}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 100.000015, y: -82.5}
+  m_SizeDelta: {x: 200, y: 25.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331174000
 MonoBehaviour:
@@ -5575,7 +5740,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing.
+  m_text: Yellow jackets are swarming!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -5602,8 +5767,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5639,13 +5804,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
+  m_margin: {x: 0.56980896, y: 0, z: 2.4285583, w: 1.751709}
   m_textInfo:
     textComponent: {fileID: 331174000}
-    characterCount: 22
+    characterCount: 28
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -6039,6 +6204,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 0
+  bUp: 0
+  bDown: 0
   description: {fileID: 1534606497}
   short_description: {fileID: 549772766}
   secrete_description: {fileID: 1726443477}
@@ -6409,6 +6576,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1318543867}
   short_description: {fileID: 1284189826}
   secrete_description: {fileID: 2093728077}
@@ -7079,6 +7248,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 2050821550}
   short_description: {fileID: 1842757874}
   secrete_description: {fileID: 1930754675}
@@ -8647,6 +8818,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1310893724}
   short_description: {fileID: 19520856}
   secrete_description: {fileID: 2081705918}
@@ -9391,6 +9564,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 922681745}
   short_description: {fileID: 1414564531}
   secrete_description: {fileID: 711193486}
@@ -9607,6 +9782,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1773521588}
   short_description: {fileID: 678655096}
   secrete_description: {fileID: 1556917485}
@@ -9823,6 +10000,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1502577455}
   short_description: {fileID: 757462044}
   secrete_description: {fileID: 1344734120}
@@ -10799,7 +10978,7 @@ GameObject:
   - component: {fileID: 709713368}
   - component: {fileID: 709713367}
   m_Layer: 5
-  m_Name: AttackDesc
+  m_Name: AttackSuccessDesc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10820,8 +10999,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93, y: -135.2}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 93, y: -107}
+  m_SizeDelta: {x: 200, y: 32.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709713367
 MonoBehaviour:
@@ -10842,7 +11021,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You see a large pit.
+  m_text: You cut deep into the swarm.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -10869,8 +11048,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10906,13 +11085,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
+  m_margin: {x: 2.8102722, y: 3.7174072, z: 2.4321747, w: 3.309204}
   m_textInfo:
     textComponent: {fileID: 709713367}
-    characterCount: 20
+    characterCount: 28
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 5
+    wordCount: 6
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -11385,6 +11564,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 2064423474}
   short_description: {fileID: 253207908}
   secrete_description: {fileID: 951005212}
@@ -11754,6 +11935,8 @@ MonoBehaviour:
   bNorth: 0
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 2059399392}
   short_description: {fileID: 2115726448}
   secrete_description: {fileID: 1025202783}
@@ -12123,6 +12306,8 @@ MonoBehaviour:
   bNorth: 0
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1480614007}
   short_description: {fileID: 2065913105}
   secrete_description: {fileID: 1247140581}
@@ -12567,6 +12752,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1350188706}
   short_description: {fileID: 218967838}
   secrete_description: {fileID: 716600968}
@@ -13469,6 +13656,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 0
+  bUp: 0
+  bDown: 0
   description: {fileID: 799584678}
   short_description: {fileID: 1929957089}
   secrete_description: {fileID: 128406750}
@@ -14658,6 +14847,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 0
+  bUp: 0
+  bDown: 0
   description: {fileID: 2051117016}
   short_description: {fileID: 435125461}
   secrete_description: {fileID: 88784879}
@@ -15883,7 +16074,7 @@ GameObject:
   - component: {fileID: 1086960879}
   - component: {fileID: 1086960878}
   m_Layer: 5
-  m_Name: DefendDesc
+  m_Name: DefendSuccessDesc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15900,12 +16091,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 259003437}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93, y: -158.9}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 93, y: -152.9}
+  m_SizeDelta: {x: 200, y: 28.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086960878
 MonoBehaviour:
@@ -15926,7 +16117,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You see a large pit.
+  m_text: You fend off the swarm.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -15953,8 +16144,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15990,10 +16181,10 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
+  m_margin: {x: 0.2728958, y: 0, z: 0.09806824, w: 2.6552734}
   m_textInfo:
     textComponent: {fileID: 1086960878}
-    characterCount: 20
+    characterCount: 23
     spriteCount: 0
     spaceCount: 4
     wordCount: 5
@@ -17004,6 +17195,8 @@ MonoBehaviour:
   bNorth: 0
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1800357536}
   short_description: {fileID: 70049471}
   secrete_description: {fileID: 888148847}
@@ -18233,6 +18426,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 0
+  bUp: 0
+  bDown: 0
   description: {fileID: 1748324654}
   short_description: {fileID: 622656}
   secrete_description: {fileID: 1453239572}
@@ -19057,6 +19252,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 680276206}
   short_description: {fileID: 1561265471}
   secrete_description: {fileID: 738756903}
@@ -19777,7 +19974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 33.8, y: -32.8}
+  m_AnchoredPosition: {x: 14.6, y: -28.1}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326668784
@@ -19826,8 +20023,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20343,6 +20540,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1044236715}
   short_description: {fileID: 604717794}
   secrete_description: {fileID: 140146876}
@@ -20485,6 +20684,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1942638561}
   short_description: {fileID: 1927567937}
   secrete_description: {fileID: 1086592632}
@@ -20701,6 +20902,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 150869475}
   short_description: {fileID: 842008321}
   secrete_description: {fileID: 32739112}
@@ -21599,6 +21802,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1310291683}
   short_description: {fileID: 899018806}
   secrete_description: {fileID: 1293974602}
@@ -21741,6 +21946,8 @@ MonoBehaviour:
   bNorth: 0
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 179619015}
   short_description: {fileID: 455037208}
   secrete_description: {fileID: 360102047}
@@ -23406,6 +23613,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 2120387697}
   short_description: {fileID: 1556452023}
   secrete_description: {fileID: 1549667843}
@@ -23622,6 +23831,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1128992526}
   short_description: {fileID: 572217045}
   secrete_description: {fileID: 1101310182}
@@ -23853,159 +24064,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549667841}
---- !u!1 &1550563905
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1550563906}
-  - component: {fileID: 1550563908}
-  - component: {fileID: 1550563907}
-  m_Layer: 5
-  m_Name: HideDesc
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1550563906
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550563905}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 259003437}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93, y: -181.7}
-  m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1550563907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550563905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You see a large pit.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 8
-  m_fontSizeBase: 8
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_isAlignmentEnumConverted: 1
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 39.146652, y: 0, z: 41.364044, w: 19.400879}
-  m_textInfo:
-    textComponent: {fileID: 1550563907}
-    characterCount: 20
-    spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_havePropertiesChanged: 0
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1550563908
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550563905}
 --- !u!1 &1556452021
 GameObject:
   m_ObjectHideFlags: 0
@@ -24757,6 +24815,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1590851908}
   short_description: {fileID: 1985424764}
   secrete_description: {fileID: 100480353}
@@ -25802,6 +25862,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1281712917}
   short_description: {fileID: 858878873}
   secrete_description: {fileID: 1087269469}
@@ -27456,6 +27518,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1109147277}
   short_description: {fileID: 260352680}
   secrete_description: {fileID: 458313716}
@@ -27910,6 +27974,159 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1818259873}
+--- !u!1 &1837321180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1837321181}
+  - component: {fileID: 1837321183}
+  - component: {fileID: 1837321182}
+  m_Layer: 5
+  m_Name: DefendFailDesc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1837321181
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837321180}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 259003437}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 93, y: -171.5}
+  m_SizeDelta: {x: 200, y: 28.95}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1837321182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837321180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: You take stings to your fore arms.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0.2728958, y: 0, z: 0.09806824, w: 2.6552734}
+  m_textInfo:
+    textComponent: {fileID: 1837321182}
+    characterCount: 34
+    spriteCount: 0
+    spaceCount: 6
+    wordCount: 7
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1837321183
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837321180}
 --- !u!1 &1838601247
 GameObject:
   m_ObjectHideFlags: 0
@@ -28249,8 +28466,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 96, y: -70}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 96, y: -52.13}
+  m_SizeDelta: {x: 200, y: 39.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845891422
 MonoBehaviour:
@@ -28271,8 +28488,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You are in a clearing of green grass. In the distance you see trees on all
-    sides.
+  m_text: Look! A swarm of yellow jackets, stingers ready!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -28299,8 +28515,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -28336,13 +28552,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 23.903107, y: 0, z: 22.309608, w: 19.400879}
+  m_margin: {x: -0.49420166, y: 0, z: -1.5686188, w: -0.32458496}
   m_textInfo:
     textComponent: {fileID: 1845891422}
-    characterCount: 81
+    characterCount: 48
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 7
+    wordCount: 8
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -28509,6 +28725,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1383031470}
   short_description: {fileID: 1040903793}
   secrete_description: {fileID: 163471985}
@@ -29707,6 +29925,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 235565049}
   short_description: {fileID: 1513122790}
   secrete_description: {fileID: 2146362838}
@@ -30225,6 +30445,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 0
+  bUp: 0
+  bDown: 0
   description: {fileID: 1998513149}
   short_description: {fileID: 99471976}
   secrete_description: {fileID: 199231507}
@@ -30754,7 +30976,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 200, y: 200}
+  m_CellSize: {x: 200, y: 300}
   m_Spacing: {x: 16, y: 16}
   m_Constraint: 1
   m_ConstraintCount: 6
@@ -30770,7 +30992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13797572, g: 0.06585208, b: 0.42647058, a: 1}
+  m_Color: {r: 0.3602941, g: 0.3602941, b: 0.3602941, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -31082,6 +31304,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 0
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 1838601249}
   short_description: {fileID: 1893508464}
   secrete_description: {fileID: 1593528196}
@@ -32365,6 +32589,8 @@ MonoBehaviour:
   bNorth: 0
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 2079002241}
   short_description: {fileID: 208765947}
   secrete_description: {fileID: 1469823754}
@@ -33496,6 +33722,8 @@ MonoBehaviour:
   bNorth: 1
   bEast: 1
   bSouth: 1
+  bUp: 0
+  bDown: 0
   description: {fileID: 2013555578}
   short_description: {fileID: 433559848}
   secrete_description: {fileID: 1190928424}

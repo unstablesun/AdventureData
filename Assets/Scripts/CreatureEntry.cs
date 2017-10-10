@@ -8,14 +8,8 @@ public class CreatureEntry : MonoBehaviour
 {
 	public int id;
 
-	public bool bWest;
-	public bool bNorth;
-	public bool bEast;
-	public bool bSouth;
-
-	public TextMeshProUGUI description;
-	public TextMeshProUGUI short_description;
-	public TextMeshProUGUI attack_description;
+	public bool bHasPoison;
+	public bool bHasBleed;
 
 	public enum CreatureLevel
 	{
@@ -26,6 +20,16 @@ public class CreatureEntry : MonoBehaviour
 		Level4,
 	};
 	public CreatureLevel creatureLevel = CreatureLevel.Level0;
+
+	public TextMeshProUGUI description;
+	public TextMeshProUGUI short_description;
+	public TextMeshProUGUI attack_success_desc;
+	public TextMeshProUGUI attack_fail_desc;
+	public TextMeshProUGUI defend_success_desc;
+	public TextMeshProUGUI defend_fail_desc;
+	public TextMeshProUGUI encounter_result_good_desc;
+	public TextMeshProUGUI encounter_result_bad_desc;
+
 
 	void Start () 
 	{
